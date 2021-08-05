@@ -31,6 +31,11 @@ To create new instance of the App, follow the below instruction
 ## Validation
 To make sure the app up and running, run the below command
 ```sh
-curl dsdsdsdsdsd 
+curl --location --request POST 'https://machineHostIp:PortNumber/v1/users/login' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic YWRtaW46c2VjcmV0' \
+--data-raw '{
+    "new_password": "your password"
+}'
 ```
 
