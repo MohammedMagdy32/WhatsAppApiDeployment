@@ -28,7 +28,7 @@ To create new instance of the App, follow the below instruction
  ```sh
  mkdir ~/biz; cd ~/biz; 
  ```
- Step 2: Go to this [link](https://docs.docker.com/compose/install/?fbclid=IwAR3Qui2fC8-Q3O4qgOEbCERv0l-HSViw80k3pN3xWvLZcakyeasvMMnctzE) and copy  docker-compose.yml and   db.env configuration files from the Installation directory to the directory you created in step 1 <br>
+ Step 2: Go to this [link](https://github.com/WhatsApp/WhatsApp-Business-API-Setup-Scripts?fbclid=IwAR26iinLgjiaHZVWcUHe0xIsxmNpgx2pSj2B0z8WjFzdkA4_H7I6Gvs4Qo4) and copy  docker-compose.yml and   db.env configuration files from the Installation directory to the directory you created in step 1 <br>
  Step 3 :  Set the WA_API_VERSION Environment Variable <br>
    ```sh
   export WA_API_VERSION=3.35.4 
