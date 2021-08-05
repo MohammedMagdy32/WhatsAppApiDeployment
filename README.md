@@ -33,8 +33,10 @@ To create new instance of the App, follow the below instruction
    ```sh
   export WA_API_VERSION=3.35.4 
   ```
+You want to use the version that is listed for WhatsApp Business API for On-premise in the table.follow [link](https://developers.facebook.com/docs/whatsapp/changelog/#recommended)
+
   Step 4:  Start the WhatsApp Business API Client
-                                                           ```sh
+   ```sh
    docker-compose up -d 
   ```
 ## Validation
