@@ -24,16 +24,25 @@ export WA_API_VERSION=3.35.4; docker-compose up -d
 
 To create new instance of the App, follow the below instruction
 
-- ewewew
-- ewewe
-- ewewe
-
+ Step 1 : Create a Directory for the Setup Scripts  assume call it biz<br>
+ ```sh
+ mkdir ~/biz; cd ~/biz; 
+ ```
+ Step 2: Go to this [link](https://docs.docker.com/compose/install/?fbclid=IwAR3Qui2fC8-Q3O4qgOEbCERv0l-HSViw80k3pN3xWvLZcakyeasvMMnctzE) and copy  docker-compose.yml and   db.env configuration files from the Installation directory to the directory you created in step 1 <br>
+ Step 3 :  Set the WA_API_VERSION Environment Variable <br>
+   ```sh
+  export WA_API_VERSION=3.35.4 
+  ```
+  Step 4:  Start the WhatsApp Business API Client
+                                                           ```sh
+   docker-compose up -d 
+  ```
 ## Validation
 To make sure the app up and running, run the below command
 ```sh
 curl --location --request POST 'https://machineHostIp:PortNumber/v1/users/login' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic YWRtaW46c2VjcmV0' \
+--header 'Authorization: Basic YNMTWRtaDWW46c2VNNXOsjcMNmV580888' \
 --data-raw '{
     "new_password": "your password"
 }'
